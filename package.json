@@ -9,8 +9,9 @@
     "dev:watch": "ts-node-dev --respawn src/index.ts",
     "clean": "rimraf dist/*",
     "tsc": "tsc",
-    "build": "npm-run-all clean tsc",
-    "start": "node ."
+    "build": "npm-run-all clean format tsc",
+    "start": "node .",
+    "format": "npx prettier --write ."
   },
   "repository": {
     "type": "git",
