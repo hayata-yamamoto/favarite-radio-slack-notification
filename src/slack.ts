@@ -12,7 +12,7 @@ interface ChatPostMessageResult extends WebAPICallResult {
 }
 
 const postMessage = async (text: string) => {
-  await web.chat.postMessage({text: text, channel: channelId});
+  await web.chat.postMessage({ text: text, channel: channelId });
   console.log("succeeded to postMessage");
 };
 
