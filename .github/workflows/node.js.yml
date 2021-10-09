@@ -3,6 +3,10 @@
 
 name: Node.js CI
 
+env:
+  SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+  CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+
 on:
   schedule:
     - cron: 0 14 * * FRI
