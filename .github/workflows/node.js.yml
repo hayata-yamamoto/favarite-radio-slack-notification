@@ -5,8 +5,8 @@ name: Node.js CI
 
 on: [pull_request]
 env:
-  SLACK_TOKEN: ${{ github.SLACK_TOKEN }}
-  CHANNEL_ID: ${{ github.CHANNEL_ID }}
+  SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
+  CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
 
   # schedule:
   #   - cron: 0 14 * * FRI
