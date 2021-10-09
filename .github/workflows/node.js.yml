@@ -3,13 +3,13 @@
 
 name: Node.js CI
 
-on: [pull_request]
 env:
   SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
   CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
 
-  # schedule:
-  #   - cron: 0 14 * * FRI
+on:
+  schedule:
+    - cron: 0 14 * * FRI
 jobs:
   build:
     runs-on: ubuntu-latest
